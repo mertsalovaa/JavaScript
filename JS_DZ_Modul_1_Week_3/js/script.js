@@ -83,10 +83,16 @@
 //7
 let fruits = ["apple", "banana", "orange"];
 // fruits.sort();
-document.write("<br/><br/>");
-document.write(`${<ul><li>fruits[0]</li><li>fruits[1]</li><li>fruits[2]</li></ul>}`)
+document.write("<br/><br/> Fruits!");
+for(let i = 0; i < fruits.length; i++)
+{
+    document.write(`<ul><li>${fruits[i].toString()}</li></ul>`)
+}
+// document.write(`${<ul><li>fruits[0]</li><li>fruits[1]</li><li>fruits[2]</li></ul>}`)
 
-function FruitSearch(string ,fruit) {
-    let pos = fruits.indexOf("banana");
+function FruitSearch(arr) {
+    let pos = arr.indexOf("orange");
     document.write(`<br/><br/>${pos.toString()} `);
 }
+
+FruitSearch(fruits);
