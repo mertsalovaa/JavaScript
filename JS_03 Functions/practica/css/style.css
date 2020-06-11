@@ -1,0 +1,39 @@
+#first {
+    width: 50%;
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+ul li {
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    margin: 5px;
+}
+
+#second {
+    width: 650px;
+    height: 230px;
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+#photo {
+    width: 332px;
+    height: 90%;
+}
