@@ -12,10 +12,10 @@
 // document.write(`<br/><br/>P(squre with side = ${side}sm.) = ${side * 4}`);
 
 // 4
-const PI = 3.14;
-let radius =+ prompt("Enter radius your circle:(SM)");
-let S = 2*PI*radius**
-document.write(`The area of the circle is ${S}sm^2`);
+// const PI = 3.14;
+// let radius = + prompt("Enter radius your circle:(SM)");
+// let S = 2 * PI * radius **
+//     document.write(`The area of the circle is ${S}sm^2`);
 
 // // 5 
 // let lenght = + prompt("Enter some lenght between two city:");
@@ -47,3 +47,28 @@ document.write(`The area of the circle is ${S}sm^2`);
 // document.write(`<br/><br/>${digit.split("").reverse().join("")}`);
 
 // 10 
+function Random(min, max) {
+    return Math.trunc((Math.random() * (max - min)) + min);
+}
+let randomDigit = Random(1, 100);
+let count = 1;
+let sometimesDigit = 0;
+let digits = [];
+do {
+    sometimesDigit = + prompt("Enter some digit, what you think is TRUE in this game..:");
+    if (sometimesDigit == randomDigit) {
+        console.log(`Uhyy! You win in this game!! Random digit is => ${randomDigit}! You won from ${count} attempts`)
+        break;
+    }
+    else if (sometimesDigit <= 50) {
+        console.log(`Ohh no.. You didn't guess the number... HINT! Your number is in the range from 1 to 50 Try again..!`);
+    }
+    else if (sometimesDigit > 51 ) {
+        console.log("Ohh no.. You didn't guess the number... HINT! Your number is in the range from 51 to 100 Try again..!");
+    }
+    else {
+        console.log(`Ohh no... You lost, you used all attempts, but did not guess! Your number was ${sometimesDigit}`);
+    }
+    digits.push(sometimesDigit);
+    count++;
+} while (count != 4);

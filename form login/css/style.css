@@ -1,0 +1,63 @@
+.main {
+    width: 30%;
+    background-color: #bfffff;
+    margin: 0 auto;
+    text-align: center;
+    padding: 18px;
+    padding-top: 0;
+    border-radius: 15px;
+}
+
+input:not([type="radio"]):not([type="checkbox"]):not([type="button"]) {
+    width: 87%;
+    margin: 7px auto;
+    height: 23px;
+    outline: none;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    box-shadow: 0.5px 0.5px 2px 0.5px #acacac;
+}
+
+input[type=button] {
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid rgb(132, 184, 252);
+    background-color: rgb(145, 193, 255);
+}
+
+input[type=button]:hover {
+    background-color: rgb(106, 165, 243);
+    color: blue;
+    transform: scale(1.1);
+}
+
+.added {
+    width: 600px;
+    background-color: #fafafa;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+li {
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px;
+    border-radius: 3px;
+    padding: 0 20px;
+    color: rgb(105, 105, 105);
+    border: 0.5px solid rgb(99, 223, 240);
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1.5px solid rgb(35, 214, 238);
+}

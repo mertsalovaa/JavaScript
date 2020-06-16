@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main">
+        <img src="logo.png" alt="logo" />
+        <div class="login-form">
+            <form>
+                <input id="text1" type="text" placeholder="Ім'я" />
+                <input id="text2" type="text" placeholder="Прізвище" />
+                <br />
+                <input type="radio" id="male" value="male" name="gender" />
+                <label for="male">Чоловік</label>
+                <input type="radio" id="female" value="female" name="gender" />
+                <label for="female">Жінка</label>
+
+                <input type="email" placeholder="e-mail" />
+
+                <input id="password1" type="password" placeholder="Пароль" />
+                <input id="password2" type="password" placeholder="Підтвердження паролю" />
+                <br />
+                <input type="checkbox" id="check" value="one" />
+                <label for="check">Я не робот</label>
+                <br />
+                <input type="button" value="Зареєструватися" disabled="true"/>
+            </form>
+        </div>
+    </div>
+    <div class="added">
+        <ul>
+            <li id="one"></li>
+            <li id="two"></li>
+            <li id="three"></li>
+            <li id="four"></li>
+        </ul>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
