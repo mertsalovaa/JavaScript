@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form id="form">
+        <br />
+        <select id="select">
+            <option disabled selected>Select type your dish</option>
+            <option value="FirstDish">First dish</option>
+            <option value="SecondDish">Second dish</option>
+            <option value="Salat">Salat</option>
+            <option value="Dessert">Desert</option>
+        </select>
+        <br />
+        <br />
+        <input type="text" id="nameRecipe" placeholder="Recipe name" />
+        <br />
+        <input type="text" id="ingradient" placeholder="Ingredients" />
+        <br />
+        <label style="margin-bottom: 10px;" for="time">Choose time for cooking:</label>
+        <br />
+        <input style="margin-bottom: 10px;" type="time" id="time" min="00:00" max="12:00" />
+        <br />
+        <fieldset>
+            <legend>Complexity</legend>
+            <input type="radio" id="easy" value="easy" name="complexity" />
+            <label for="easy">Easy</label>
+            <br />
+            <input type="radio" id="medium" value="medium" name="complexity" />
+            <label for="medium">Medium</label>
+            <br />
+            <input type="radio" id="hard" value="hard" name="complexity" />
+            <label for="hard">Hard</label>
+        </fieldset>
+        <br />
+        <textarea id="description" placeholder="Description of cooking"></textarea>
+        <br />
+        <input type="button" id="button" onclick="ChangeAll()"
+            style="background-color:  rgba(223, 176, 250, 0.699); height: 30px; width: 20%; margin-top: 10px;" value="Save"/>
+    </form>
+
+    <div class="listRecipe">
+        <img alt="some dish" />
+        <div id="info">
+            <ul>
+                <li id="cookingTime"><i class="far fa-clock"></i> </li>
+                <li id="difficulty"><i class="far fa-chart-bar"></i> </li>
+            </ul>
+        </div>
+        <h1>Some name your dish</h1>
+        <p>Some description:</p>
+        <p>Some ingradients:</p>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/39c9a805b6.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

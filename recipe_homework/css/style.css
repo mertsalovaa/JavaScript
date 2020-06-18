@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    background-color: rgba(237, 215, 250, 0.699);
+}
+
+select {
+    height: 30px;
+    width: 30%;
+}
+
+form {
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+    margin-right: 0px;
+}
+
+form input, select, textarea, button {
+    outline: none;
+    border: 1.5px solid rgba(217, 164, 248, 0.699);
+    box-shadow: 6px 2px 9px 0.5px rgba(216, 186, 233, 0.699);
+}
+
+form input[type=text] {
+    width: 50%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    resize: none;
+    width: 50%;
+    height: 20%;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: rgb(162, 87, 233);
+    color: darkslateblue;
+}
+
+::placeholder {
+    color: rgb(186, 138, 231);
+}
+
+fieldset, select option, label, input [type="time"] {
+    border: none;
+    color: rgb(155, 99, 207);
+}
+
+.listRecipe {
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:  rgb(225, 193, 240);
+    visibility: hidden;
+}
+
+ul  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 50%;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+img {
+    width: 80%;
+    height: 30%;
+    text-align: center;
+}
+
+h1, p {
+    text-align: left;
+    margin-left: 30px;
+}
