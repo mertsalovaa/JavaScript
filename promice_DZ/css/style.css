@@ -1,0 +1,55 @@
+header {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+    height: auto;
+    background-color: #dbdbdb;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    margin: 2px;
+}
+
+.spinner {
+    margin: 0 auto;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.photo {
+    margin: 0 auto;
+    width: 95%;
+    height: auto;
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.body {
+    height: 100vh;
+}
+
+.my-layout-spinner {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.btn-height {
+    max-height: 50px;
+}
+
+.card {
+    width: 250px;
+    height: 220px;
+}

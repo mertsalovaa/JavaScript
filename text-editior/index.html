@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text editor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="block1">
+        <input disabled='false' type="checkbox" id="bold1" value="bold" name="StyleText" />
+        <label for="bold1">Bold</label>
+        <input disabled='false' type="checkbox" id="underline1" value="underline" name="StyleText" />
+        <label for="underline1">Underline</label>
+        <input disabled='false' type="checkbox" id="italics1" value="italics" name="StyleText" />
+        <label for="italics1">Italics</label>
+
+        <input disabled='false' type="radio" id="left1" value="left" name="StyleText" />
+        <label for="left1">Left</label>
+        <input disabled='false' type="radio" id="right1" value="right" name="StyleText" />
+        <label for="right1">Right</label>
+        <input disabled='false' type="radio" id="justify1" value="justify" name="StyleText" />
+        <label for="justify1">Justify</label>
+        <br />
+        <textarea id="text1"></textarea>
+        <button onclick="SendText()">Send</button>
+    </div>
+
+    <div class="block1">
+        <form>
+            <input type="checkbox" id="bold" value="bold" name="StyleText" />
+            <label for="bold">Bold</label>
+            <input type="checkbox" id="underline" value="underline" name="StyleText" />
+            <label for="underline">Underline</label>
+            <input type="checkbox" id="italics" value="italic" name="StyleText" />
+            <label for="italics">Italics</label>
+
+            <input type="radio" id="left" value="left" name="StyleText" />
+            <label for="left">Left</label>
+            <input type="radio" id="right" value="right" name="StyleText" />
+            <label for="right">Right</label>
+            <input type="radio" id="justify" value="justify" name="StyleText" />
+            <label for="justify">Justify</label>
+            <br />
+            <textarea id="text2"></textarea>
+        </form>
+        <button id="showText" onclick="StyleText()">Show text</button>
+    </div>
+    <div class="block1">
+        <h3>Result :</h3>
+        <div class="resDiv">
+            <p></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

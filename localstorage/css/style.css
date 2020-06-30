@@ -1,0 +1,122 @@
+.block1 {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    height: auto;
+    padding: 30px;
+    background-image: url("../img/background.jpg");
+    box-shadow: inset 0px 0px 20px 0px #6aacebfd;
+    opacity: 0.7;
+    margin: 0 auto;
+}
+
+fieldset {
+    outline: none;
+    border: none;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+label {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 30px;
+    line-height: 40px;
+    color: white;
+    opacity: 1;
+    font-family: 'Spirax', cursive;
+    float: left;
+    font-size: 20px;
+    font-weight: 150;
+}
+
+#arrow {
+    position: absolute;
+    width: 50px;
+    border: none;
+    outline: none;
+    height: 50px;
+    top: 10%;
+    right: 34%;
+    border-radius: 50%;
+    font-size: 35px;
+    border-left: 2px solid rgba(87, 87, 87, 0.918);
+    background-color: transparent;
+    color: rgba(87, 87, 87, 0.918);
+    text-align: center;
+    box-shadow: none;
+}
+
+#arrow:hover {
+    /* color: rgb(180, 180, 180);
+    border-left: 2px solid rgb(180, 180, 180); */
+    color: rgb(77, 77, 77);
+    border-left: 2px solid rgb(77, 77, 77);
+}
+
+input {
+    outline: none;
+    border: 1px solid #6aacebfd;
+    width: 70%;
+    height: 30px;
+    padding-left: 7px;
+}
+
+#btn {
+    border: none;
+    outline: none;
+    width: 52px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: transparent;
+}
+
+#btn:hover {
+    text-shadow: 0px 1px 1px black;
+}
+
+input::placeholder {
+    color: #6aadebd7;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: 'Inria Serif', serif;
+}
+
+@media (max-width:1340px) {
+    form {
+        margin: 0 auto;
+        width: 40%;
+    }
+    fieldset {
+        margin-bottom: 0;
+    }
+    #arrow {
+        top: 10%;
+        right: 28%;
+    }
+}
+
+@media (max-width:600px) {
+    form {
+        width: 40%;
+        padding: 0;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        margin: 0 auto;
+    }
+    #arrow {
+        position: absolute;
+        top: 10%;
+        right: 30%;
+    }
+    fieldset {
+        margin-bottom: 0;
+    }
+}
