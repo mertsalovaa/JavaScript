@@ -1,0 +1,7 @@
+.coloredBlock {
+    background-color: rgb(218, 175, 175);
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,30 @@
+.red {
+    background-color: red;
+    width: 350px;
+    height: 80px;
+    position: absolute;
+}
+
+.blue {
+    background-color: green;
+    margin-top: 20px;
+}
+
+body {
+    height: 1000px;
+    position: relative;
+}
+
+form {
+    min-height: 100px;
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input[data-focused="true"] {
+    border: 2px solid rgb(153, 255, 0);
+    outline: none;
+}

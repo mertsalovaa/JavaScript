@@ -1,0 +1,12 @@
+#test {
+    width: 200px;
+    /* height: 40px; */
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: lightblue;
+    padding: 5px;
+}
+
+.one {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}

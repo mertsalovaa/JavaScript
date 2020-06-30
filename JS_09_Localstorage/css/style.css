@@ -1,0 +1,98 @@
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 10px solid rgb(164, 211, 255);
+    border-right: 10px solid rgb(92, 176, 255);
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 1px 2px 2px 1px rgba(99, 99, 99, 0.5);
+display: none;
+}
+
+@keyframes animationSpinner {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+h1 {
+    text-align: center;
+    color: orange;
+    font-family: 'Sriracha', cursive;
+    text-shadow: 1px 2px 12px 1px rgb(66, 66, 66);
+}
+
+.spinner-load {
+    animation: 2s animationSpinner infinite;
+display: block;
+}
+
+.container {
+    display: flex;
+    height: 500px;
+    overflow: hidden;
+    background-color: rgba(158, 158, 158, 0.5);
+}
+
+body {
+    margin: 0;
+}
+
+.shadow {
+    background-color: rgb(131, 123, 123);
+}
+
+
+
+
+
+
+
+form {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(67, 197, 230);
+    padding: 40px;
+    box-shadow: 1px 2px 5px 1px rgba(99, 99, 99, 0.5);
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.col:first-child {
+    border-right: 2px solid white;
+    padding-right: 30px;
+}
+
+.col:last-child {
+    padding-left: 30px;
+}
+
+label {
+    color: white;
+    font-family: 'Sriracha', cursive;
+letter-spacing: 20px;
+}
+
+input {
+    padding: 3px;
+}
+
+textarea {
+    height: 90px;
+
+}
+table {
+    width: 100%;
+    background-color: rgb(122, 191, 255);
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td {
+    border: 1px solid white;
+    padding: 4px;
+}

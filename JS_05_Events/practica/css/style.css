@@ -1,0 +1,57 @@
+body {
+    padding: 20px;
+}
+
+.main-ul, .added-ul {
+    list-style-type: none;
+    padding: 0;
+    outline: none;
+}
+
+.main-ul button {
+    color: white;
+    text-transform: uppercase;
+    outline: none;
+    border: 1px solid #8d1e38;
+    border-radius: 1px;
+    width: 300px;
+    margin-top: 3px;
+    height: 40px;
+    line-height: 10px;
+    text-align: left;
+    padding-left: 10px;
+    background-color: #b02647;
+    box-shadow: 1px 1px 2px 1px #911c37;
+}
+
+.added-ul button {
+    background-color: #8f2430;
+}
+
+.span {
+    float: right;
+}
+
+.display {
+    display: none;
+}
+/* .decoration {
+    width: 3px;
+    height: 30px;
+    background-color: black;
+    display: none;
+    float: left;
+} */
+
+.div1 {
+    height: 300px;
+    width: 400px;
+    padding: 20px;
+    background-image: url('../img/settings.png');
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position-x: center;
+    background-position-y: center;
+    overflow: scroll;
+    border: 2px solid grey;
+}
