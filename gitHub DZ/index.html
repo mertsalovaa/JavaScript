@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <img src="git.png" />
+        <label for="search">Login (github)</label>
+        <div class="cont">
+            <input class="label2" id="search" type="text" placeholder="Login" />
+            <button onclick="getData()"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="error"></div>
+    </header>
+
+    <div class="container display">
+        <div class="col1 ">
+            <img id="avatar" />
+            <div class="row">
+                <label class="label1" for="name">Name:</label>
+                <label class="label2" id="name"></label>
+            </div>
+            <div class="row">
+                <label class="label1" for="login">Login:</label>
+                <label class="label2" id="login"></label>
+            </div>
+        </div>
+        <div class="col2 ">
+            <div class="row">
+                <label class="label1" for="url">Url to gitHub:</label>
+                <label class="label2"><a id="url" href="#"></a></label>
+            </div>
+            <div class="row">
+                <label class="label1" for="city">City:</label>
+                <label class="label2" id="city"></label>
+            </div>
+            <div class="row">
+                <label class="label1" for="email">Email:</label>
+                <label class="label2" id="email"></label>
+            </div>
+            <div class="row">
+                <label class="label1" for="followers">Followers:</label>
+                <label class="label2" id="followers"></label>
+                <label class="label1" for="following">Following:</label>
+                <label class="label2" id="following"></label>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/39c9a805b6.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -4,24 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Privat24</title>
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/bootstrap.css" rel="stylesheet" />
 
 </head>
 
-<body>
+<body class="mx-auto">
+    <header>
+        <img src="img/privat.png" />
+        <a href="https://www.privat24.ua">Ваш живий Інтернет-Банк</a>
+    </header>
     <div class="input-group mb-3 group">
-        <input type="text" class="form-control" placeholder="City name" aria-label="Recipient's username"
-            >
+        <input type="text" class="form-control" placeholder="City name" aria-label="Recipient's username">
         <div class="input-group-append">
-            <button class="btn btn-primary" type="button" onclick="SearchInfo()">Search</button>
+            <button class="btn btn-primary" type="button" onclick="getData()">Search</button>
         </div>
     </div>
-    <div class="main">
+    <div class="main"></div>
+    
+    <div id="map"></div>
 
-    </div>
 
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDylkmhFJEQp8C7bTxboz06d24liYaQaFc&callback=initMap"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>

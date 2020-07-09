@@ -6,20 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Spirax&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@1,300&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
     <form class="login">
-        <fieldset class="block1">
-            <label class="lbl">Name</label>
-            <input id="name" type="text" placeholder="Name" />
-        </fieldset>
-        <fieldset class="block1" >
-            <label class="lbl">Email</label>
-            <input type="email" placeholder="Email" />
-        </fieldset>
         <fieldset>
             <label class="lbl">Login</label>
             <input id="login" type="text" placeholder="Login" />
@@ -29,7 +21,17 @@
             <label>Password</label>
             <input type="password" maxlength="12" placeholder="Password" />
         </fieldset>
+        <fieldset class="block1">
+            <label class="lbl">Name</label>
+            <input id="name" type="text" placeholder="Name" />
+        </fieldset>
+        <fieldset class="block1">
+            <label class="lbl">Email</label>
+            <input type="email" placeholder="Email" />
+            <!-- <button id="save">Save</button> -->
+        </fieldset>
         <button id="btn">Register</button>
+        <button id="btn" class="save">Save</button>
     </form>
 
     <script src="js/script.js"></script>

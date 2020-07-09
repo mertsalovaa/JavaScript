@@ -1,0 +1,90 @@
+.display {
+    visibility: hidden;
+}
+
+.error {
+    float: left;
+}
+
+.cont {
+/* height: 50px; */
+display: flex;
+}
+
+label {
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 23px;
+    margin-right: 10px;
+}
+
+header {
+    width: 99%;
+    height: auto;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+header button {
+    height: 26.5px;
+}
+
+header input {
+    height: 20px;
+    margin-right: 2px;
+}
+
+header img {
+    height: 50px;
+}
+
+.col1 img {
+    height: 150px;
+    box-shadow: 0px 0px 4px 0.5px #9a9a9a;
+    border-radius: 2px;
+}
+
+.container {
+    background-color: rgb(253, 251, 236);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    box-shadow: 0 0 5px 0.5px #8c74006b;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 49.9%;
+}
+.col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 49.9%;
+}
+
+.row {
+    border-bottom: 1px solid rgb(177, 142, 99);
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+.label2, a {
+    font-family: 'Merienda One', cursive;
+    color: rgba(255, 200, 117, 0.932);
+    font-size: 20px;
+}
+
+.label1 {
+    color: rgb(219, 152, 52);
+}
