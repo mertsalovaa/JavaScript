@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <img src="img/coffee2" />
+    </header>
+    <form>
+        <input type="text" placeholder="admin or user" />
+        <input type="password" placeholder="password" />
+        <button onclick="SignIn()">Sign in</button>
+    </form>
+
+    <div class="main">
+        <div class="table">
+            <img id="main-img" src="img/coffee.jfif"/>
+        </div>
+        <div class="col">
+            <div class="choose">
+                <select>
+                    <option value="" selected disabled hidden>Choose hot drink</option>
+                    <option value="Espresso">Espresso (15 uan)</option>
+                    <option value="Americano">Americano (20 uan)</option>
+                    <option value="Cappuccino">Cappuccino (20 uan)</option>
+                    <option value="Tea">Tea (12 uan)</option>
+
+                </select>
+                <br />
+                <input id="number" type="number" min="0" max="10" placeholder="Sugar (1 uan)" />
+                <br /> <br />
+
+                <input type="checkbox" id="two" value="Milk" />
+                <label for="two">Milk (3 uan)</label>
+                <br />
+                <input type="checkbox" id="four" value="Lemon" />
+                <label for="four">Lemon (2 uan)</label>
+                <br />
+                <input type="checkbox" id="one" value="Syrop" />
+                <label for="one">Syrop (3 uan)</label>
+                <br />
+                <input type="checkbox" id="three" value="Chocolate" />
+                <label for="three">Chocolate (4 uan)</label>
+                <br />
+                <button onclick="MakeOrder()">Order</button>
+            </div>
+            <div class="total-price">
+                <p>Total price: </p>
+                <div></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/classes.js"></script>
+</body>
+
+</html>

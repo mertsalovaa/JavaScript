@@ -22,7 +22,7 @@
 
 let ID = 1;
 document.querySelector("input[type='button'").onclick = getData;
-let users = [{
+var users = [{
     ID: "ID",
     Name: "Name",
     Email: "Email",
