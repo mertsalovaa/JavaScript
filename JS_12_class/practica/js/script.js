@@ -1,9 +1,29 @@
-// let main = document.querySelector('form');
-// function SignIn() {
-//     let sign = document.querySelector('form');
-//     sign.classList.add('display');    
-//     main.classList.remove('display');    
-// }
+let main = document.querySelector('form');
+function SignIn(event) {
+    let login = main.children[0].value;
+    let password = main.children[1].value;
+    if (login == 'admin') {
+        event.preventDefault();
+        let admin = new User('admin', 'admin');
+        if (admin.SignInSystem(admin.login, admin.password)) {
+            table.innerHTML += `<h3>${admin.login}</h3>`;
+        }
+        else {
+            console.log('this is not admin');
+        }
+    }
+    else if (login == 'user') {
+        event.preventDefault();
+        let user = new User('user', 'user');
+        if (user.SignInSystem(user.login, user.password)) {
+            table.innerHTML += `<h3>${user.login}</h3>`;
+        }
+        else {
+            console.log('this is not user');
+        }
+    }
+}
+
 let coffee;
 let name;
 let sugarPcs;
@@ -15,9 +35,6 @@ function MakeOrder() {
     console.log(name);
     console.log(`Sugar: ${sugarPcs}, Milk - ${added[0]}, Lemon - ${added[1]}, Syrop - ${added[2]}, Chocolate - ${added[3]}`);
     sugarPcs = document.getElementById('number').value;
-    if (sugarPcs == null) {
-        sugarPcs = 0;
-    }
     AddedChecked();
     if (name == 'Americano') {
         Price = 20;
@@ -74,11 +91,7 @@ function AddedChecked() {
             added.push(search[index].value);
         }
         else {
-            added.push('-');
+            added.push(' - ');
         }
     }
 }
-
-window.onload = () => {
-    localStorage.setItem("")
-};

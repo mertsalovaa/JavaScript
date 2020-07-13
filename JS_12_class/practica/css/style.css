@@ -28,6 +28,10 @@ button {
     box-shadow: 1px 1px 1px 1px rgba(59, 59, 59, 0.671);
 }
 
+.disabled {
+    opacity: 0.65;
+}
+
 img {
     height: 100px;
     text-align: center;

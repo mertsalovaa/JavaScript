@@ -22,10 +22,6 @@ class Drink {
             this.price += parseInt(this.sugar);
             console.log("this.price = " + this.price);
         }
-        if(this.BoolSugar() == false) {
-            this.sugar = 0;
-            this.price += this,sugar;
-        }
         if (this.BoolMilk()) {
             this.price += 3;
             console.log("this.price = " + this.price);
@@ -46,7 +42,7 @@ class Drink {
         return this.price;
     }
     BoolSugar() {
-        if (this.sugar != null || this.sugar != 0 || this.sugar != 'undefined') { 
+        if (this.sugar != null || this.sugar != 0 || this.sugar != 'undefined') {
             return true;
         }
         else {
@@ -97,22 +93,22 @@ class Drink {
 }
 
 class Americano extends Drink {
-    constructor(name, price, sugar, milk, syrop, chocolate, lemon) {
+    constructor(name, price = 20, sugar, milk, syrop, chocolate, lemon) {
         super(name, price, sugar, milk, syrop, chocolate, lemon);
     }
 }
 class Espresso extends Drink {
-    constructor(name, price, sugar, milk, syrop, chocolate, lemon) {
+    constructor(name, price = 15, sugar, milk, syrop, chocolate, lemon) {
         super(name, price, sugar, milk, syrop, chocolate, lemon);
     }
 }
 class Cappuccino extends Drink {
-    constructor(name, price, sugar, milk, syrop, chocolate, lemon) {
+    constructor(name, price = 20, sugar, milk, syrop, chocolate, lemon) {
         super(name, price, sugar, milk, syrop, chocolate, lemon);
     }
 }
 class Tea extends Drink {
-    constructor(name, price, sugar, milk, syrop, chocolate, lemon) {
+    constructor(name, price = 12, sugar, milk, syrop, chocolate, lemon) {
         super(name, price, sugar, milk, syrop, chocolate, lemon);
     }
 }
@@ -122,6 +118,17 @@ class Tea extends Drink {
 
 class User {
     constructor(login, password) {
+        this.login = login;
+        this.password = password;
+    }
 
+    SignInSystem(login, password) {
+        if(this.login == login && this.password == password) {
+            console.log(`This user "${login}" is in system`);
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }
