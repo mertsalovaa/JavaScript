@@ -1,3 +1,7 @@
+body {
+    width: 100%;
+}
+
 .header {
     width: 100%;
     height: 500px;
@@ -8,6 +12,10 @@
     background-image: url("../img/left.png"), url("../img/right.png");
     background-position: 0 100%, 100% 0;
     background-repeat: no-repeat;
+}
+
+.header img {
+    height: 35px;
 }
 
 .header ul {
@@ -87,6 +95,9 @@ article {
     background-color: #F3F4F5;
 }
 
+.row {
+}
+
 .proWorks button, .latestRecruitm button, nav button {
     padding: 0 40px;
     margin: 20px 0;
@@ -137,7 +148,7 @@ h2, h5 {
 }
 
 .articleListContainer {
-    width: 850px;
+    width: 900px;
     height: 380px;
     margin: 0 auto;
     margin-top: 30px;
@@ -202,6 +213,7 @@ footer ul li {
     display: flex;
     flex-flow: wrap row;
     align-items: center;
+    justify-content: center;
     padding: 20px 200px;
 }
 
@@ -221,24 +233,86 @@ footer ul li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
     color: rgba(70, 70, 70, 0.747);
+    /* border-bottom: 1px solid gray; */
+}
+
+.card-body-item p {
+    height: 20px;
 }
 
 .card-body-item h6 {
     margin-right: 10px;
 }
 
+.card-item h5 {
+    margin-top: 7px;
+    font-size: 17px;
+}
+
 .card-item {
     text-align: left;
-    height: 310px;
+    height: 320px;
     width: 220px;
     background-color: rgb(247, 247, 247);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 15px;
     margin: 15px;
+    margin-right: 10px;
+    box-shadow: 0 0 8px 0 #9e9e9edc;
+    border-radius: 5px;
+    padding-bottom: 0;
 }
 
 .proWorks {
     width: 98%;
+    padding-left: 20px;
+    padding-right: 0;
+    margin: 0 auto;
+}
+
+.display {
+    display: none;
+}
+
+.mouseEvent {
+    position: relative;
+}
+
+#my-menu {
+    position: absolute;
+}
+
+.my-menu-item {
+    background-color: #143F5F;
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    padding-right: 0;
+    margin-top: 25px;
+}
+
+.my-menu-item a {
+    color: #ffffff;
+    font-size: 15px;
+    margin: 5px;
+    margin-right: 0;
+    width: 100px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.my-menu-item a:hover {
+    background-color: transparent;
+    color: rgb(189, 189, 189);
+    text-decoration: none;
 }

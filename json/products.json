@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "id": 11,
+            "id": "11",
             "categoryId": 1,
             "icon": 1,
             "name": "BUILD BLACK - Public IOS App UX/UI",
@@ -88,7 +88,7 @@
             "id": 18,
             "categoryId": 5,
             "icon": 8,
-            "name": "Tradign app IOS",
+            "name": "Tradigns app IOS",
             "author": "Ronan Janson",
             "view": 75675,
             "price": 790,
@@ -100,7 +100,7 @@
             "id": 19,
             "categoryId": 10,
             "icon": 9,
-            "name": "Tradign app IOS",
+            "name": "Tradigng app IOS",
             "author": "Ronan Janson",
             "view": 75675,
             "price": 790,
@@ -112,7 +112,7 @@
             "id": 20,
             "categoryId": 10,
             "icon": 10,
-            "name": "Tradign app IOS",
+            "name": "Tradignd app IOS",
             "author": "Ronan Janson",
             "view": 75675,
             "price": 790,
@@ -124,7 +124,7 @@
             "id": 23,
             "categoryId": 8,
             "icon": 11,
-            "name": "Tradign app IOS",
+            "name": "Tradignl app IOS",
             "author": "Ronan Janson",
             "view": 75675,
             "price": 790,
@@ -136,14 +136,25 @@
             "id": 24,
             "categoryId": 8,
             "icon": 12,
-            "name": "Tradign app IOS",
+            "name": "Tradigna app IOS",
             "author": "Ronan Janson",
             "view": 75675,
             "price": 790,
             "currency": "usd",
             "rating":5,
             "voted": 20
+        },
+        {
+            "id": 25,
+            "categoryId": 9,
+            "icon": 6,
+            "name": "Lorem Ipsum",
+            "author": "Ipsum Lorem",
+            "view": 100,
+            "price": 15,
+            "currency": "usd",
+            "rating":2,
+            "voted": 4
         }
     ]
 }
-               

@@ -5,21 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OverLocal</title>
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/bootstrap.css" rel="stylesheet" />
 </head>
 
 <body>
     <div class="header">
         <div class="div1">
-            <h3>Overlocal</h3>
+            <h3><img src="../img/logo.png" /></h3>
             <ul class="font-weight-bolder">
-                <li>Works</li>
-                <li>Pricing</li>
-                <li>Packeges</li>
-                <li>Blog</li>
-                <li>Contacts</li>
+                <li for='my-menu' id="mouseEvent"><a href="#">Works
+                        <div id="my-menu" class="display">
+                            <div class="my-menu-item"></div>
+                        </div>
+                    </a> </li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Packeges</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacts</a></li>
             </ul>
+
 
             <button type="button" style="color: #ffffff;" class="btn btn-link">Sign in</button>
             <button type="button" class="btn btn-light">Join us</button>
@@ -36,6 +41,7 @@
             </div>
 
             <p>There are 43 proWorks more</p>
+            <img src="../img/Group.png" />
         </main>
     </div>
     <article>
@@ -50,25 +56,8 @@
 
     <div class="proWorks text-center">
         <h2>Latest proWorks</h2>
-        <div class="row" id="works">
-            <!-- <div class="col-6 col-md-3 col-lg-2">
-                <div class="card-item">
-                    <img src="img/icon/1.png" />
-                    <h3>hoilkhngbfwef</h3>
-                    <p>sertyukmjhgfeert</p>
-                    <div class="card-item-body">
-                        <h6><i class="fas fa-eye"></i> 23456789</h6>
-                        <h6>dfghgfbd</h6>
-                    </div>
-                    <div class="card-item-body">
-                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="far fa-star"></i></p>
-                        <p><i class="fas fa-file-contract"></i></p>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-        <button type="button" class="btn btn-primary">View all proWorks</button>
+        <div class="row" id="works"></div>
+        <button type="button" onclick="ViewAllProWorks()" class="btn btn-primary">View all proWorks</button>
     </div>
     <div class="latestRecruitm">
         <h2 class="text-center">Latest Recruitments</h2>
@@ -109,21 +98,21 @@
         <h2>Why works with OverLocal?</h2>
         <div class="articleListContainer d-flex justify-content-around">
             <div class="cars">
-                <img src="img/Imternational.png" />
+                <img src="../img/Imternational.png" />
                 <h5>International Designers</h5>
                 <p>Good draw knew bred ham busy his hour. Ask agreed answer rather joy nature admire wisdom.
                     Moonlight
                 </p>
             </div>
             <div class="cars">
-                <img src="img/Secured.png" />
+                <img src="../img/Secured.png" />
                 <h5>Secured Transaction</h5>
                 <p>Good draw knew bred ham busy his hour. Ask agreed answer rather joy nature admire wisdom.
                     Moonlight
                 </p>
             </div>
             <div class="cars">
-                <img src="img/premium.png" />
+                <img src="../img/premium.png" />
                 <h5>Premium Works Only</h5>
                 <p>Good draw knew bred ham busy his hour. Ask agreed answer rather joy nature admire wisdom.
                     Moonlight
@@ -138,17 +127,17 @@
         <h2>How OverLocal Works?</h2>
         <div class="articleListContainer articleListContainer2  d-flex justify-content-around">
             <div class="cars">
-                <img src="img/wallet.png" />
+                <img src="../img/wallet.png" />
                 <h5>1. Client deposits $ to OverLocal</h5>
                 <p>Designer feels secured before starts working.</p>
             </div>
             <div class="cars">
-                <img src="img/shipping.png" />
+                <img src="../img/shipping.png" />
                 <h5>2. Designer sends works thru' OverLocal</h5>
                 <p>OverLocal act as middleman of $ and keeps track of all documents.</p>
             </div>
             <div class="cars">
-                <img src="img/paymentMethod.png" />
+                <img src="../img/paymentMethod.png" />
                 <h5>3. Release $ to designer only if client satisfies.</h5>
                 <p>This mechanism ensure highest quality of works.</p>
             </div>
@@ -164,14 +153,14 @@
     <footer>
         <h3>Overlocal</h3>
         <ul class="font-weight-bolder">
-            <li>Privacy Policy</li>
-            <li>Terms and Conditions</li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
         </ul>
         <p>© 2018 OverLocal. All rights reserved.</p>
     </footer>
-    <script src="js/categories.json"></script>
+    
     <script src="https://kit.fontawesome.com/39c9a805b6.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
