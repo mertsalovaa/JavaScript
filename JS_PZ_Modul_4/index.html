@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <label for="number">Task 1</label>
+    <input id="number" type="number" max="1000" min="0" step="5" />
+    <br />
+
+    <label for="coloredBlock">Task 2</label>
+    <input id="coloredBlock" type="button" value="Add block" onclick="CreateBlock()" />
+    <div class="blocks"></div>
+
+    <label for="lorem">Task 3</label>
+    <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum id consequatur quibusdam ex nostrum,
+        quisquam cum
+        doloribus magnam assumenda atque sint. Exercitationem, nemo. Labore quis consectetur tempora facilis assumenda
+        ex.</p>
+
+    <label for="comment">Task 4</label>
+    <div id="comment">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio sit enim placeat. Veniam molestiae,
+            cumque eum ipsa fugiat delectus quo et dolor voluptate ex. Exercitationem harum alias vel aut ut?Fugiat
+            dolorum eligendi ut ullam voluptates saepe mollitia sed tenetur reprehenderit exercitationem facere,
+            tempora, minus perspiciatis nostrum cumque molestias quas iure earum maiores nam officiis tempore eos ipsum.
+            Architecto, voluptate.</p>
+
+        <form>
+            <div>
+                <label for="name">Name: </label>
+                <input id="name" type="text" />
+            </div>
+            <label for="comm">Comment: </label>
+            <textarea id="comm"></textarea>
+            <button onclick="CreateComment()">Add comment</button>
+        </form>
+
+        <div class="comments">
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

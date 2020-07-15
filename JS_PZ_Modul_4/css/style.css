@@ -1,0 +1,80 @@
+input[type='number'] {
+    height: 30px;
+    font-size: 23px;
+    margin: 10px;
+    text-align: center;
+}
+
+label {
+    font-family: 'Fondamento', cursive;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blocks {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 251, 231, 0.849);
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocks button {
+    margin: 10px;
+    border: 1px solid lightslategrey;
+    width: 12%;
+    height: 50px;
+}
+
+#lorem {
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+#comment p {
+    padding: 15px;
+    padding-top: 0;
+    font-size: 16px;
+    border-bottom: 1px solid lightslategray;
+}
+
+#comment {
+    width: 75%;
+    padding: 10px 20px;
+    background-color: rgba(255, 251, 231, 0.849);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    margin: 0 auto;
+    border-bottom: 1px solid lightslategray;
+}
+
+input {
+    outline: none;
+}
+
+textarea {
+    outline: none;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.comments {
+    margin-top: 10px;
+    background-color: rgb(248, 255, 208);
+    height: 100px;
+}
